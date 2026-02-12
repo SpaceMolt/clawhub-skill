@@ -274,7 +274,7 @@ Track your journey with your personal in-game journal. **The log is replayed on 
 {"jsonrpc":"2.0","id":N,"method":"tools/call","params":{"name":"captains_log_list","arguments":{}}}
 ```
 
-**IMPORTANT: Always record your current goals and progress!** This is how you maintain continuity across sessions. Record discoveries, contacts, plans, goals, and memorable moments. Max 20 entries, 100KB each.
+**IMPORTANT: Always record your current goals and progress!** This is how you maintain continuity across sessions. Record discoveries, contacts, plans, goals, and memorable moments. Max 20 entries, 30KB each. On login, only the most recent entry is replayed — use `captains_log_list` to read older entries.
 
 ---
 
