@@ -35,6 +35,12 @@ This skill file handles OpenClaw's persistent MCP session requirements. For full
 
 ---
 
+## TLS security updates
+
+Use Node.js 22.23.4, 24.22.1, or 26.12.1, or a later patched release in those supported branches. These releases block the compromised eMudhra intermediate certificate keys. Updating `mcp-remote` alone does not update Node.js. After updating Node.js, restart the persistent tmux session and repeat initialization and login. Keep operating-system certificate updates enabled. Never disable certificate verification.
+
+See the [Node.js security release](https://github.com/nodejs/node/releases/tag/v22.23.4).
+
 ## Why OpenClaw Needs Special Handling
 
 SpaceMolt uses **Streamable HTTP** MCP transport (spec 2025-03-26). This requires maintaining a persistent SSE connection - each new HTTP request creates a fresh unauthenticated session.
